@@ -23,7 +23,7 @@ class BlogPostsController extends Controller
         $config['edit'] = 'app.posts.edit';
         $config['delete'] = 'app.posts.delete';
         $config['route'] = route('app.posts.create');
-//dd($config);
+dd($config);
 
         return view('posts', $config);
 

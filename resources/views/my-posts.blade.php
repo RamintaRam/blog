@@ -8,7 +8,7 @@
 
 
 
-    @if(sizeof($list)>0)
+    @if(isset($list))
         <table  id="mytable" class="table table-bordred table-striped" xmlns="http://www.w3.org/1999/html">
             <thead>
             <tr>
@@ -39,16 +39,16 @@
                             @endif
                         </td>
                     @endforeach
-                        {{--<td>--}}
-                        {{--<a href="{{ route($edit,$record['id']) }}">--}}
-                        {{--<button type="button" class="btn btn-primary">Edit</button>--}}
-                        {{--</a>--}}
-                        {{--</td>--}}
-                        {{--<td>--}}
-                        {{--<button onclick="deleteItem( '{{ route($delete, $record['id']) }}' )"--}}
-                        {{--class="btn btn-danger">Delete--}}
-                        {{--</button>--}}
-                        {{--</td>--}}
+                    {{--<td>--}}
+                    {{--<a href="{{ route($edit,$record['id']) }}">--}}
+                    {{--<button type="button" class="btn btn-primary">Edit</button>--}}
+                    {{--</a>--}}
+                    {{--</td>--}}
+                    {{--<td>--}}
+                    {{--<button onclick="deleteItem( '{{ route($delete, $record['id']) }}' )"--}}
+                    {{--class="btn btn-danger">Delete--}}
+                    {{--</button>--}}
+                    {{--</td>--}}
 
 
                 </tr>
